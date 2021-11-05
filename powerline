@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt update -y && sudo apt upgrade -y && \
-sudo apt install zsh git && \
+sudo apt install -y zsh git && \
 curl https://raw.githubusercontent.com/manasm11/my_zshrc/master/.zshrc --output ~/.zshrc && \
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" && \
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions && \
